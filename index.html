@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>AURA RING — Cosmic Energy Jewellery</title>
+  <meta name="description" content="AURA RING — Where celestial craftsmanship meets pink plasma energy. Limited-edition rings forged for the extraordinary." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════════════════════╗
+     ║  MOBILE TOPBAR  (≤768px only)                          ║
+     ╚══════════════════════════════════════════════════════════╝ -->
+<header class="mob-top">
+  <div class="mob-brand">
+    <i class="fa-solid fa-ring"></i> AURA
+  </div>
+  <button class="mob-cart-btn" id="mob-cart-btn" aria-label="Open cart">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span class="mob-cart-badge" id="mob-cart-badge">0</span>
+  </button>
+</header>
+
+<!-- ╔══════════════════════════════════════════════════════════╗
+     ║  MOBILE BOTTOM NAV  (≤768px only)                      ║
+     ╚══════════════════════════════════════════════════════════╝ -->
+<nav class="mob-nav" aria-label="Mobile navigation">
+  <a href="#home"    class="mob-nav-item active" data-sec="home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+  <a href="#ring"    class="mob-nav-item" data-sec="ring"><i class="fa-solid fa-bolt"></i><span>Energy</span></a>
+  <a href="#hand"    class="mob-nav-item" data-sec="hand"><i class="fa-solid fa-hand-sparkles"></i><span>Fusion</span></a>
+  <a href="#shop"    class="mob-nav-item" data-sec="shop"><i class="fa-solid fa-gem"></i><span>Shop</span></a>
+  <button class="mob-nav-item" id="mob-nav-cart" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span>Cart</span></button>
+</nav>
+
+<!-- ╔══════════════════════════════════════════════════════════╗
+     ║  DESKTOP SIDEBAR  (>768px)                             ║
+     ╚══════════════════════════════════════════════════════════╝ -->
+<nav class="sidebar" id="sidebar" aria-label="Site navigation">
+  <a href="#home" class="sb-logo" id="sb-logo">
+    <i class="fa-solid fa-ring"></i>
+    <span>AURA RING</span>
+  </a>
+
+  <div class="sb-links">
+    <a href="#home"  class="sb-link active" data-sec="home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="#ring"  class="sb-link" data-sec="ring"><i class="fa-solid fa-bolt"></i><span>Core Energy</span></a>
+    <a href="#hand"  class="sb-link" data-sec="hand"><i class="fa-solid fa-hand-sparkles"></i><span>The Fusion</span></a>
+    <a href="#about" class="sb-link" data-sec="about"><i class="fa-solid fa-circle-nodes"></i><span>Craftsmanship</span></a>
+    <a href="#shop"  class="sb-link" data-sec="shop"><i class="fa-solid fa-gem"></i><span>Shop</span></a>
+  </div>
+
+  <div class="sb-footer">
+    <button class="sb-cart" id="sb-cart-btn" aria-label="Open cart">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="cart-badge" id="cart-badge">0</span>
+      <span class="label">Cart</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ╔══════════════════════════════════════════════════════════╗
+     ║  MAIN SITE CONTENT                                     ║
+     ╚══════════════════════════════════════════════════════════╝ -->
+<div class="site-wrap">
+
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 0 — HERO LANDING
+       (Matches buckssauce.com's bold landing before scrolling)
+       ══════════════════════════════════════════════════════════ -->
+  <section class="hero-intro" id="home">
+    <div class="hero-intro__bg"></div>
+
+    <!-- Static ring hero image (PNG) -->
+    <img
+      src="/images/ring-hero.png"
+      alt="Aura Ring floating in pink energy"
+      class="hero-intro__ring"
+      id="hero-ring-img"
+    />
+
+    <!-- Left content column -->
+    <div class="hero-intro__content reveal">
+      <div class="label-tag">New Collection · 2026 Drop</div>
+
+      <h1 class="display-title">
+        WEAR<br/>
+        THE<br/>
+        <em>COSMOS</em>
+      </h1>
+
+      <p class="hero-intro__sub">
+        Aura Ring — hand-engraved 18K gold filigree, radiant-cut diamonds,
+        and a living pink plasma core that reacts to your energy field.
+        Crafted for the extraordinary.
+      </p>
+
+      <div class="hero-intro__actions">
+        <a href="#shop"  class="btn btn-fill"><i class="fa-solid fa-gem"></i> Shop the Drop</a>
+        <a href="#ring"  class="btn btn-ghost">See It Ignite <i class="fa-solid fa-arrow-down"></i></a>
+      </div>
+    </div>
+
+    <!-- Scroll nudge -->
+    <div class="hero-intro__scroll">
+      <div class="scroll-arrow"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       TICKER 1
+       ══════════════════════════════════════════════════════════ -->
+  <div class="ticker pink">
+    <div class="ticker__inner">
+      FORGED IN PLASMA <span class="ticker-sep">·</span>
+      RADIANT CUT DIAMOND <span class="ticker-sep">·</span>
+      18K HAND ENGRAVED GOLD <span class="ticker-sep">·</span>
+      LIMITED TO 99 PIECES <span class="ticker-sep">·</span>
+      FREE INSURED DELIVERY <span class="ticker-sep">·</span>
+      FORGED IN PLASMA <span class="ticker-sep">·</span>
+      RADIANT CUT DIAMOND <span class="ticker-sep">·</span>
+      18K HAND ENGRAVED GOLD <span class="ticker-sep">·</span>
+      LIMITED TO 99 PIECES <span class="ticker-sep">·</span>
+      FREE INSURED DELIVERY <span class="ticker-sep">·</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 1 — RING VIDEO SCROLL SCRUB
+       (Buckssauce: bottle animates as you scroll the page)
+       ══════════════════════════════════════════════════════════ -->
+  <section id="ring" style="position:relative;">
+    <div class="video-pin-wrap" id="ring-pin">
+      <!-- The sticky frame that stays in viewport -->
+      <div class="video-sticky" id="ring-sticky">
+        <video
+          id="ring-video"
+          src="/videos/ring.mp4"
+          muted
+          playsinline
+          preload="auto"
+          aria-label="Aura Ring rotating with pink energy"
+        ></video>
+        <div class="video-sticky__overlay"></div>
+
+        <!-- Panel A — appears early in scroll -->
+        <div class="vid-panel left" id="rp-a">
+          <h2>PURE<br/><span style="color:var(--c-pink)">ENERGY</span><br/>IGNITES</h2>
+          <p>Concentrated pink plasma fields envelop every stone — charging the ring with a living, reactive aura visible to the human eye.</p>
+        </div>
+
+        <!-- Panel B — mid scroll -->
+        <div class="vid-panel right" id="rp-b">
+          <h2>DIAMONDS<br/>THAT<br/><span style="color:var(--c-pink)">BREATHE</span></h2>
+          <p>3.5ct radiant-cut centre stone acts as a lens, focusing plasma energy into cascading spectral light.</p>
+        </div>
+
+        <!-- Panel C — late scroll -->
+        <div class="vid-panel center" id="rp-c">
+          <h2 style="font-size:clamp(2rem,5vw,5rem);">THE RING IS<br/><span style="color:var(--c-pink)">AWAKE</span></h2>
+        </div>
+      </div>
+
+      <!-- Scroll space that drives the video scrub (4× viewport) -->
+      <div class="video-scroll-space"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FEATURES STRIP  (matches buckssauce attribute grid)
+       ══════════════════════════════════════════════════════════ -->
+  <div class="features-strip">
+    <div class="feature-item reveal">
+      <i class="fa-solid fa-gem"></i>
+      <h4>3.5ct Diamond</h4>
+      <p>Flawless radiant-cut centre stone</p>
+    </div>
+    <div class="feature-item reveal">
+      <i class="fa-solid fa-fire-flame-curved"></i>
+      <h4>Plasma Core</h4>
+      <p>Living pink energy field woven into the setting</p>
+    </div>
+    <div class="feature-item reveal">
+      <i class="fa-solid fa-crown"></i>
+      <h4>18K Gold</h4>
+      <p>Hand-engraved filigree scrollwork band</p>
+    </div>
+    <div class="feature-item reveal">
+      <i class="fa-solid fa-shield-halved"></i>
+      <h4>Lifetime Bond</h4>
+      <p>Structural integrity guaranteed forever</p>
+    </div>
+    <div class="feature-item reveal">
+      <i class="fa-solid fa-boxes-packing"></i>
+      <h4>Insured Ship</h4>
+      <p>Free worldwide tracked &amp; insured delivery</p>
+    </div>
+    <div class="feature-item reveal">
+      <i class="fa-solid fa-rotate-left"></i>
+      <h4>30-Day Return</h4>
+      <p>Full refund — no energy, no charge</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SPLIT STORY SECTION  (matches buckssauce brand story)
+       ══════════════════════════════════════════════════════════ -->
+  <section class="split-section" id="about">
+    <!-- Left: visual -->
+    <div class="split-media">
+      <img
+        src="/images/ring-hero.png"
+        alt="Close-up of the Aura Ring filigree and gemstone"
+        loading="lazy"
+      />
+      <div class="split-media__label">Est. 2026</div>
+    </div>
+
+    <!-- Right: story -->
+    <div class="split-content">
+      <span class="section-num">01</span>
+      <div class="section-tag">The Craft</div>
+
+      <h2 class="story-title">
+        BUILT FOR<br/>
+        THE<br/>
+        <span style="color:var(--c-pink)">FEARLESS</span>
+      </h2>
+
+      <p class="story-body">
+        We founded Aura after asking a simple question: what if a ring could feel alive? Every piece begins as a hand-sketched filigree blueprint, etched into 18K gold by master artisans who have spent decades perfecting the craft.
+      </p>
+
+      <p class="story-body">
+        The plasma infusion process — our proprietary technique — is the last step. Each completed ring is exposed to a controlled pink energy field for 48 hours. The result: a stone that genuinely glows from within, unique to its wearer.
+      </p>
+
+      <div class="story-stats">
+        <div class="stat-item">
+          <h3>99</h3>
+          <p>Pieces per drop</p>
+        </div>
+        <div class="stat-item">
+          <h3>48h</h3>
+          <p>Plasma infusion</p>
+        </div>
+        <div class="stat-item">
+          <h3>∞</h3>
+          <p>Lifetime warranty</p>
+        </div>
+      </div>
+
+      <a href="#shop" class="btn btn-fill">
+        <i class="fa-solid fa-gem"></i> Explore Pieces
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       TICKER 2 (inverted / white)
+       ══════════════════════════════════════════════════════════ -->
+  <div class="ticker white reverse" style="margin: 5rem 0 0;">
+    <div class="ticker__inner">
+      SYNCED TO YOUR AURA <span class="ticker-sep">·</span>
+      CUSTOM COMFORT FIT <span class="ticker-sep">·</span>
+      PLASMA INFUSED <span class="ticker-sep">·</span>
+      HAND ENGRAVED <span class="ticker-sep">·</span>
+      LIMITED RELEASE <span class="ticker-sep">·</span>
+      SYNCED TO YOUR AURA <span class="ticker-sep">·</span>
+      CUSTOM COMFORT FIT <span class="ticker-sep">·</span>
+      PLASMA INFUSED <span class="ticker-sep">·</span>
+      HAND ENGRAVED <span class="ticker-sep">·</span>
+      LIMITED RELEASE <span class="ticker-sep">·</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 2 — HAND VIDEO SCROLL SCRUB
+       (Second pinned video like buckssauce's lifestyle section)
+       ══════════════════════════════════════════════════════════ -->
+  <section id="hand" style="position:relative;">
+    <div class="video-pin-wrap" id="hand-pin">
+      <div class="video-sticky" id="hand-sticky">
+        <video
+          id="hand-video"
+          src="/videos/hand.mp4"
+          muted
+          playsinline
+          preload="auto"
+          aria-label="Aura Ring worn on hand with pink energy streams"
+        ></video>
+        <div class="video-sticky__overlay"></div>
+
+        <!-- Panel D -->
+        <div class="vid-panel left" id="hp-a">
+          <h2>FEEL<br/>THE<br/><span style="color:var(--c-pink)">CURRENT</span></h2>
+          <p>The moment the ring meets your skin, the plasma conduit completes its circuit — and the energy becomes yours.</p>
+        </div>
+
+        <!-- Panel E -->
+        <div class="vid-panel right" id="hp-b">
+          <h2>YOUR<br/><span style="color:var(--c-pink)">AURA</span><br/>AMPLIFIED</h2>
+          <p>Pink energy streams synchronise with your body's natural electromagnetic field, creating a visible, personal halo effect.</p>
+        </div>
+      </div>
+      <div class="video-scroll-space"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ABOUT / BRAND STORY SECTION
+       ══════════════════════════════════════════════════════════ -->
+  <section class="about-section">
+    <div class="about-label">AURA</div>
+    <div class="about-content reveal">
+      <div class="section-tag">Our Philosophy</div>
+      <h2>MORE THAN<br/>METAL &amp;<br/><span style="color:var(--c-pink)">STONE</span></h2>
+      <p>We believe jewellery should do more than sit on your finger. It should be a declaration — a convergence of art, science, and personal energy. That is the Aura promise.</p>
+      <p>Every Aura Ring is a singular artefact. We cap each collection at 99 pieces globally, ensuring that no two wearers will ever cross paths wearing the same drop.</p>
+      <a href="#shop" class="btn btn-fill"><i class="fa-solid fa-gem"></i> Shop All Pieces</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SHOP SECTION  (matches buckssauce product grid)
+       ══════════════════════════════════════════════════════════ -->
+  <section class="shop-section" id="shop">
+    <div class="section-header">
+      <h2 class="reveal">SELECT<br/>YOUR<br/><span style="color:var(--c-pink)">DROP</span></h2>
+      <p>Each variant is calibrated to a distinct aura wavelength. Find the piece that resonates with your personal energy conduit.</p>
+    </div>
+
+    <div class="products-grid">
+      <!-- Card 1 -->
+      <div class="prod-card reveal" data-id="p1" data-name="Nova Pink Aura" data-price="299">
+        <img src="/images/ring-hero.png"
+             alt="Nova Pink Aura Ring" class="prod-card__img" loading="lazy" />
+        <div class="prod-card__tag">Signature · 2026</div>
+        <div class="prod-card__name">Nova Pink<br/>Aura</div>
+        <p class="prod-card__desc">The flagship. High-glow pink plasma core with a radiant-cut centre stone that reacts dynamically to ambient light and body heat.</p>
+        <div class="prod-card__footer">
+          <span class="prod-price">$299</span>
+          <button class="prod-add-btn add-btn" aria-label="Add Nova Pink Aura to cart">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="prod-card reveal" data-id="p2" data-name="Golden Horizon" data-price="349">
+        <img src="/images/ring-hero.png"
+             alt="Golden Horizon Ring" class="prod-card__img" loading="lazy"
+             style="filter:hue-rotate(45deg) drop-shadow(0 10px 20px rgba(255,160,0,0.3));" />
+        <div class="prod-card__tag">Gold Edition · 2026</div>
+        <div class="prod-card__name">Golden<br/>Horizon</div>
+        <p class="prod-card__desc">24K solid filigree alongside the diamond cluster. A warmer, sun-calibrated resonance frequency — for those who command the room.</p>
+        <div class="prod-card__footer">
+          <span class="prod-price">$349</span>
+          <button class="prod-add-btn add-btn" aria-label="Add Golden Horizon to cart">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="prod-card reveal" data-id="p3" data-name="Dark Plasma" data-price="399">
+        <img src="/images/ring-hero.png"
+             alt="Dark Plasma Ring" class="prod-card__img" loading="lazy"
+             style="filter:grayscale(1) brightness(0.7) drop-shadow(0 10px 20px rgba(255,255,255,0.1));" />
+        <div class="prod-card__tag">Obsidian · 2026</div>
+        <div class="prod-card__name">Dark<br/>Plasma</div>
+        <p class="prod-card__desc">Obsidian-coated aerospace titanium chassis with glowing white energy lines. Built for deep energetic grounding and absolute focus.</p>
+        <div class="prod-card__footer">
+          <span class="prod-price">$399</span>
+          <button class="prod-add-btn add-btn" aria-label="Add Dark Plasma to cart">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       TICKER 3 — dark
+       ══════════════════════════════════════════════════════════ -->
+  <div class="ticker dark" style="margin-top:5rem;">
+    <div class="ticker__inner">
+      PRE-ORDER NOW OPEN <span class="ticker-sep">·</span>
+      CUSTOM RING SIZING <span class="ticker-sep">·</span>
+      PLASMA INFUSION CERTIFIED <span class="ticker-sep">·</span>
+      GIA CERTIFIED DIAMONDS <span class="ticker-sep">·</span>
+      WORLDWIDE SHIPPING <span class="ticker-sep">·</span>
+      PRE-ORDER NOW OPEN <span class="ticker-sep">·</span>
+      CUSTOM RING SIZING <span class="ticker-sep">·</span>
+      PLASMA INFUSION CERTIFIED <span class="ticker-sep">·</span>
+      GIA CERTIFIED DIAMONDS <span class="ticker-sep">·</span>
+      WORLDWIDE SHIPPING <span class="ticker-sep">·</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="ft-brand">
+        <h2>AURA <span>RING</span></h2>
+        <p>Forging artefacts at the intersection of high luxury and metaphysical technology. Every ring is a universe — wear yours.</p>
+      </div>
+
+      <div class="ft-col">
+        <h3>Navigate</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#ring">Core Energy</a></li>
+          <li><a href="#hand">The Fusion</a></li>
+          <li><a href="#about">Craftsmanship</a></li>
+          <li><a href="#shop">Shop</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">Sizing Guide</a></li>
+          <li><a href="#">Care &amp; Maintenance</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col ft-newsletter">
+        <h3>Inner Cycle</h3>
+        <p>Private alerts on future drops, energy alignment content, and early access for members.</p>
+        <form class="news-form" id="news-form" novalidate>
+          <input type="email" class="news-input" placeholder="your@email.com"
+                 aria-label="Email address" required />
+          <button type="submit" class="news-btn">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aura LLC — All Rights Reserved. Developed by Gigni.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="X/Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </footer>
+</div><!-- /.site-wrap -->
+
+<!-- ╔══════════════════════════════════════════════════════════╗
+     ║  CART DRAWER                                           ║
+     ╚══════════════════════════════════════════════════════════╝ -->
+<aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
+  <div class="cart-inner">
+    <div class="cart-hd">
+      <h2>Cart</h2>
+      <button class="cart-close" id="cart-close-btn" aria-label="Close cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-body" id="cart-body">
+      <div class="cart-empty">
+        <i class="fa-solid fa-bag-shopping"></i>
+        Your cart is empty.<br/>Add a ring to begin.
+      </div>
+    </div>
+
+    <div class="cart-ft">
+      <div class="cart-total-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">$0</span>
+      </div>
+      <button class="btn btn-fill checkout-btn" id="checkout-btn">
+        <i class="fa-solid fa-lock"></i> Secure Checkout
+      </button>
+    </div>
+  </div>
+</aside>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
